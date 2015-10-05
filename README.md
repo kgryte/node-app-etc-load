@@ -69,16 +69,21 @@ Including the `.` when specifying an extension is optional.
 var parser = load.parser( 'json' );
 ```
 
-To extend the main `load` function or to override a default parser, provide a `parser` function for a specified filename extension.
+To extend the main `load` function or to override a parser, provide a `parser` function for an associated extension.
 
 ``` javascript
 var parser = require( 'my-special-fmt-parser' );
 
-load.parser( '<ext>', parser );
+load.parser( '<my-ext>', parser );
 ```
 
-Once a parser is set, the main `load` function will recognize and parse files accordingly. The only parser which __cannot__ be overridden is for `.js` configuration files.
+Once a parser is set, the main `load` function will parse provided files accordingly.
 
+``` javascript
+var config = load( './file.<my-ext>' );
+```
+
+__Note__: the only parser which __cannot__ be overridden is for `.js` configuration files.
 
 
 ## Examples
