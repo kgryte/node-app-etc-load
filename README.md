@@ -42,7 +42,7 @@ The following configuration file formats (extensions) are supported:
 *	[ALCE](https://github.com/kgryte/utils-alce-parse): `*.alce`
 *	`*.js`
 
-See the `./text/fixtures` directory for file examples.
+See the `./test/fixtures` directory for file examples.
 
 
 #### load.exts()
