@@ -4,6 +4,7 @@
 // MODULES //
 
 var chai = require( 'chai' ),
+	path = require( 'path' ),
 	load = require( './../lib/load.js' );
 
 
@@ -130,9 +131,11 @@ describe( 'load', function tests() {
 	});
 
 	it( 'should load a configuration file and parse according to a provided extension (without requiring a leading `.`)', function test() {
-		var config;
+		var config,
+			fpath;
 
-		config = load( './test/fixtures/config.txt', 'toml' );
+		fpath = path.resolve( __dirname, './../test/fixtures/config.txt' );
+		config = load( fpath, 'toml' );
 		assert.deepEqual( config, expected );
 	});
 
