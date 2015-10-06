@@ -26,6 +26,31 @@ describe( 'load', function tests() {
 		expect( load ).to.be.a( 'function' );
 	});
 
+	it( 'should throw an error if provided an extension which is not a string primitive', function test() {
+		var values,
+			i;
+
+		values = [
+			5,
+			NaN,
+			null,
+			true,
+			undefined,
+			[],
+			{},
+			function(){}
+		];
+
+		for ( i = 0; i < values.length; i++ ) {
+			expect( badValue( values[i] ) ).to.throw( TypeError );
+		}
+		function badValue( value ) {
+			return function badValue() {
+				load( './test/fixtures/config.txt', value );
+			};
+		}
+	});
+
 	it( 'should throw an error if provided a filename having an unsupported filename extension', function test() {
 		var values,
 			i;
@@ -94,6 +119,20 @@ describe( 'load', function tests() {
 		assert.deepEqual( config, expected );
 
 		config = load( './test/fixtures/config.yml' );
+		assert.deepEqual( config, expected );
+	});
+
+	it( 'should load a configuration file and parse according to a provided extension', function test() {
+		var config;
+
+		config = load( './test/fixtures/config.txt', '.toml' );
+		assert.deepEqual( config, expected );
+	});
+
+	it( 'should load a configuration file and parse according to a provided extension (without requiring a leading `.`)', function test() {
+		var config;
+
+		config = load( './test/fixtures/config.txt', 'toml' );
 		assert.deepEqual( config, expected );
 	});
 

@@ -18,7 +18,7 @@ $ npm install app-etc-load
 var load = require( 'app-etc-load' );
 ```
 
-#### load( filename )
+#### load( filename[, ext] )
 
 Loads a configuration file.
 
@@ -34,7 +34,7 @@ var config = load( './file.<ext>' );
 // returns {...}
 ```
 
-The following configuration file formats (extensions) are supported:
+The following configuration file formats (extensions) are supported (see the `./test/fixtures` directory for file examples):
 
 *	[TOML](https://github.com/kgryte/utils-toml-parse): `*.toml`
 *	[YAML](https://github.com/kgryte/utils-yaml-parse): `*.yaml` or `*.yml`
@@ -42,7 +42,20 @@ The following configuration file formats (extensions) are supported:
 *	[ALCE](https://github.com/kgryte/utils-alce-parse): `*.alce`
 *	`*.js`
 
-See the `./test/fixtures` directory for file examples.
+By default, the method infers the file format from the filename extension. To explicitly specify the file format, provide an `extension argument.
+
+``` javascript
+var config = load( './file.txt', '.toml' );
+// returns {...}
+```
+
+Including the `.` when specifying an `extension` is optional.
+
+``` javascript
+var config = load( './file.txt', 'toml' );
+// returns {...}
+```
+
 
 
 #### load.exts()
