@@ -18,7 +18,7 @@ $ npm install app-etc-load
 var load = require( 'app-etc-load' );
 ```
 
-#### load( filename[, ext] )
+#### load( filename[, fmt] )
 
 Loads a configuration file.
 
@@ -42,17 +42,17 @@ The following configuration file formats (extensions) are supported (see the `./
 *	[ALCE](https://github.com/kgryte/utils-alce-parse): `*.alce`
 *	`*.js`
 
-By default, the method infers the file format from the filename extension. To explicitly specify the file format, provide an `extension argument.
-
-``` javascript
-var config = load( './file.txt', '.toml' );
-// returns {...}
-```
-
-Including the `.` when specifying an `extension` is optional.
+By default, the method infers the file format from the filename extension. To explicitly specify the file format, provide a `fmt` argument.
 
 ``` javascript
 var config = load( './file.txt', 'toml' );
+// returns {...}
+```
+
+Specifying the file format as a filename extension is also supported.
+
+``` javascript
+var config = load( './file.txt', '.toml' );
 // returns {...}
 ```
 
