@@ -39,7 +39,8 @@
     "toml",
     "ini",
     "cjson",
-    "alce"
+    "alce",
+    "hjson"
   ],
   "bugs": {
     "url": "https://github.com/kgryte/node-app-etc-load/issues"
