@@ -48,6 +48,7 @@
     "utils-alce-parse": "^1.0.0",
     "utils-cwd": "^2.0.0",
     "utils-extname": "^1.0.0",
+    "utils-hjson-parse": "^1.0.0",
     "utils-json-parse": "^1.0.0",
     "utils-toml-parse": "^1.0.0",
     "utils-yaml-parse": "^1.0.0",

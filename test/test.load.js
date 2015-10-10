@@ -97,6 +97,13 @@ describe( 'load', function tests() {
 
 	it( 'should load `*.cjson` configuration files' );
 
+	it( 'should load `*.hjson` configuration files', function test() {
+		var config;
+
+		config = load( './test/fixtures/config.hjson' );
+		assert.deepEqual( config, expected );
+	});
+
 	it( 'should load `*.alce` configuration files', function test() {
 		var config;
 
