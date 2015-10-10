@@ -104,6 +104,13 @@ describe( 'load', function tests() {
 		assert.deepEqual( config, expected );
 	});
 
+	it( 'should load `*.json5` configuration files', function test() {
+		var config;
+
+		config = load( './test/fixtures/config.json5' );
+		assert.deepEqual( config, expected );
+	});
+
 	it( 'should load `*.alce` configuration files', function test() {
 		var config;
 
