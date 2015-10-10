@@ -39,6 +39,7 @@ The following configuration file formats (extensions) are supported (see the `./
 *	[TOML](https://github.com/kgryte/utils-toml-parse): `*.toml`
 *	[YAML](https://github.com/kgryte/utils-yaml-parse): `*.yaml` or `*.yml`
 *	[JSON](https://github.com/kgryte/utils-json-parse): `*.json`
+*	[HJSON](https://github.com//kgryte/utils-hjson-parse): `*.hjson`
 *	[ALCE](https://github.com/kgryte/utils-alce-parse): `*.alce`
 *	`*.js`
 
