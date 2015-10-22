@@ -43,6 +43,7 @@ The following configuration file formats (extensions) are supported (see the `./
 *	[JSON5](https://github.com/kgryte/utils-json5-parse): `*.json5`
 *	[ALCE](https://github.com/kgryte/utils-alce-parse): `*.alce`
 *	[.properties](https://github.com/kgryte/utils-properties-parse): `*.properties`
+*	[INI](https://github.com/kgryte/utils-ini-parse): `*.ini`
 *	`*.js`
 
 By default, the method infers the file format from the filename extension. To explicitly specify the file format, provide a `fmt` argument.

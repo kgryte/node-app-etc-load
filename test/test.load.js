@@ -125,7 +125,12 @@ describe( 'load', function tests() {
 		assert.deepEqual( config, expected );
 	});
 
-	it( 'should load `*.ini` configuration files' );
+	it( 'should load `*.ini` configuration files', function test() {
+		var config;
+
+		config = load( './test/fixtures/config.ini' );
+		assert.deepEqual( config, expected );
+	});
 
 	it( 'should load `*.toml` configuration files', function test() {
 		var config;
