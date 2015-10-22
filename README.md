@@ -45,7 +45,7 @@ The following configuration file formats (extensions) are supported (see the `./
 *	[ALCE](https://github.com/kgryte/utils-alce-parse): `*.alce`
 *	[INI](https://github.com/kgryte/utils-ini-parse): `*.ini`
 *	[.properties](https://github.com/kgryte/utils-properties-parse): `*.properties`
-*	JS: `*.js`
+*	js: `*.js`
 
 By default, the method infers the file format from the filename extension. To explicitly specify the file format, provide a `fmt` argument.
 
