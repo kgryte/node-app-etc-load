@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "utils-alce-parse": "^1.0.0",
+    "utils-cjson-parse": "^1.0.0",
     "utils-cwd": "^2.0.0",
     "utils-extname": "^1.0.0",
     "utils-hjson-parse": "^1.0.0",
