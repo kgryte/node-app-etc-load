@@ -1,6 +1,6 @@
 {
   "name": "app-etc-load",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Loads a configuration file.",
   "author": {
     "name": "Athan Reines",
