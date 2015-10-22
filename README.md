@@ -42,6 +42,7 @@ The following configuration file formats (extensions) are supported (see the `./
 *	[HJSON](https://github.com//kgryte/utils-hjson-parse): `*.hjson`
 *	[JSON5](https://github.com/kgryte/utils-json5-parse): `*.json5`
 *	[ALCE](https://github.com/kgryte/utils-alce-parse): `*.alce`
+*	[.properties](https://github.com/kgryte/utils-properties-parse): `*.properties`
 *	`*.js`
 
 By default, the method infers the file format from the filename extension. To explicitly specify the file format, provide a `fmt` argument.

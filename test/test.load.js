@@ -118,6 +118,13 @@ describe( 'load', function tests() {
 		assert.deepEqual( config, expected );
 	});
 
+	it( 'should load `*.properties` configuration files', function test() {
+		var config;
+
+		config = load( './test/fixtures/config.properties' );
+		assert.deepEqual( config, expected );
+	});
+
 	it( 'should load `*.ini` configuration files' );
 
 	it( 'should load `*.toml` configuration files', function test() {
