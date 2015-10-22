@@ -1,73 +1,75 @@
 {
-  "name": "app-etc-load",
-  "version": "1.0.0",
-  "description": "Loads a configuration file.",
-  "author": {
-    "name": "Athan Reines",
-    "email": "kgryte@gmail.com"
-  },
-  "contributors": [
-    {
-      "name": "Athan Reines",
-      "email": "kgryte@gmail.com"
-    }
-  ],
-  "scripts": {
-    "test": "mocha",
-    "test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
-    "codecov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
-  },
-  "main": "./lib",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/kgryte/node-app-etc-load.git"
-  },
-  "keywords": [
-    "app",
-    "etc",
-    "config",
-    "configuration",
-    "settings",
-    "env",
-    "load",
-    "parse",
-    "utils",
-    "utility",
-    "json",
-    "yml",
-    "yaml",
-    "toml",
-    "ini",
-    "cjson",
-    "alce",
-    "hjson"
-  ],
-  "bugs": {
-    "url": "https://github.com/kgryte/node-app-etc-load/issues"
-  },
-  "dependencies": {
-    "utils-alce-parse": "^1.0.0",
-    "utils-cjson-parse": "^1.0.0",
-    "utils-cwd": "^2.0.0",
-    "utils-extname": "^1.0.0",
-    "utils-hjson-parse": "^1.0.0",
-    "utils-ini-parse": "^1.0.0",
-    "utils-json-parse": "^1.0.0",
-    "utils-json5-parse": "^1.0.0",
-    "utils-properties-parse": "^1.0.0",
-    "utils-toml-parse": "^1.0.0",
-    "utils-yaml-parse": "^1.0.0",
-    "validate.io-function": "^1.0.2",
-    "validate.io-string-primitive": "^1.0.0"
-  },
-  "devDependencies": {
-    "chai": "3.x.x",
-    "codecov.io": "^0.1.5",
-    "istanbul": "^0.3.0",
-    "jshint": "2.x.x",
-    "jshint-stylish": "2.x.x",
-    "mocha": "2.x.x",
-    "validate.io-string-array": "^1.0.0"
-  },
-  "license": "MIT"
+	"name": "app-etc-load",
+	"version": "1.0.0",
+	"description": "Loads a configuration file.",
+	"author": {
+		"name": "Athan Reines",
+		"email": "kgryte@gmail.com"
+	},
+	"contributors": [
+		{
+			"name": "Athan Reines",
+			"email": "kgryte@gmail.com"
+		}
+	],
+	"scripts": {
+		"test": "mocha",
+		"test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+		"codecov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+	},
+	"main": "./lib",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/kgryte/node-app-etc-load.git"
+	},
+	"keywords": [
+		"app",
+		"etc",
+		"config",
+		"configuration",
+		"settings",
+		"env",
+		"load",
+		"parse",
+		"utils",
+		"utility",
+		"json",
+		"yml",
+		"yaml",
+		"toml",
+		"ini",
+		"cjson",
+		"alce",
+		"hjson",
+		"json5",
+		"properties"
+	],
+	"bugs": {
+		"url": "https://github.com/kgryte/node-app-etc-load/issues"
+	},
+	"dependencies": {
+		"utils-alce-parse": "^1.0.0",
+		"utils-cjson-parse": "^1.0.0",
+		"utils-cwd": "^2.0.0",
+		"utils-extname": "^1.0.0",
+		"utils-hjson-parse": "^1.0.0",
+		"utils-ini-parse": "^1.0.0",
+		"utils-json-parse": "^1.0.0",
+		"utils-json5-parse": "^1.0.0",
+		"utils-properties-parse": "^1.0.0",
+		"utils-toml-parse": "^1.0.0",
+		"utils-yaml-parse": "^1.0.0",
+		"validate.io-function": "^1.0.2",
+		"validate.io-string-primitive": "^1.0.0"
+	},
+	"devDependencies": {
+		"chai": "3.x.x",
+		"codecov.io": "^0.1.5",
+		"istanbul": "^0.3.0",
+		"jshint": "2.x.x",
+		"jshint-stylish": "2.x.x",
+		"mocha": "2.x.x",
+		"validate.io-string-array": "^1.0.0"
+	},
+	"license": "MIT"
 }
